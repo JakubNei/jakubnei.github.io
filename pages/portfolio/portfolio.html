@@ -1,7 +1,7 @@
 
 
 
-<link rel="stylesheet" href="{{ "/pages/portfolio/portfolio.css?v=" | append: site.github.build_revision | relative_url }}">
+<link rel="stylesheet" href="{{'/pages/portfolio/portfolio.css?v=" | append: site.github.build_revisio' | relative_url }}">
 
 <siv id="portfolio">
 
@@ -9,20 +9,23 @@
 	<header><h2>Personal Projects</h2></header>
 
 	<section>
-		<img src="{{ "pages/portfolio/logo-unity.png" | relative_url }}">
+		<img src="{{'pages/portfolio/logo-unity.png' | relative_url }}">
 		<aside>
 			<h3>Aesthetic GPU based game</h3>
 			<br>
 			<div>Learning various concept and algorithms and attempting to make a fun aesthetic game out of it.</div>
 			<div>SDF Accelerated 2D GPU Global Illumination, GPU Cellular Automata, GPU Particles</div>
-			<div>Videos: <a href="https://www.dropbox.com/s/chakf23z3t5kez0/CellularAutomata%202022-01-12%2016-08-37.mkv" target="_blank">2022-01-12</a> · <a href="https://www.dropbox.com/s/aq4vsw4r9m4xscp/CellularAuromata%202023-03-17%2017-43-04.mp4" target="_blank">2023-03-17</a> 
-			 <a href="https://www.dropbox.com/s/eet6ex5o61ekp34/2023-07-03%2015-33-40.mp4" target="_blank">2023-07-03</a></div>
+			<br>
+			<div>Videos: <a href="https://www.dropbox.com/s/chakf23z3t5kez0/CellularAutomata%202022-01-12%2016-08-37.mkv" target="_blank">2022-01-12</a> · <a href="https://www.dropbox.com/s/eet6ex5o61ekp34/2023-07-03%2015-33-40.mp4" target="_blank">2023-07-03</a></div>
 			<div class="skills">Skills: C# · Unity · ShaderLab · Compute Shaders · HLSL · SDF · 2D Global Illumination · GPU Particles</div>
+			<div class="previews">
+				<a href="https://www.dropbox.com/s/aq4vsw4r9m4xscp/CellularAuromata%202023-03-17%2017-43-04.mp4" target="_blank"><img src="{{'pages/portfolio/preview-cellularautomata.webp' | relative_url }}"></a>
+			</div>
 		</aside>
 	</section>
 
 	<section>
-		<img src="{{ "pages/portfolio/logo-unity.png" | relative_url }}">
+		<img src="{{'pages/portfolio/logo-unity.png' | relative_url }}">
 		<aside>
 			<h3>Runtime AudioClip Loader</h3>
 			<br>
@@ -37,12 +40,19 @@
 	<header><h2>Game Jams</h2></header>
 
 	<section>
-		<img src="{{ "pages/portfolio/logo-lanka.png" | relative_url }}">
+		<img src="{{'pages/portfolio/logo-ladumdare.png' | relative_url }}">
 		<aside>
-			<h3>Ladum Dare 53 - Betrayal of Lanka</h3>			
+			<h3>Ladum Dare 50 - Betrayal of Lanka</h3>			
 			<div>Apr 3rd 2022</div>
+			<br>
 			<div>3 days of pure creativity and joy</div>
 			<div><a href="https://alternityarts.itch.io/betrayal-of-lanka">Source 1</a> · <a href="https://ldjam.com/events/ludum-dare/50/betrayal-of-lanka">Source 2</a>
+			<div class="previews">
+				<img src="{{'pages/portfolio/preview-lanka-1.gif' | relative_url }}">
+				<img src="{{'pages/portfolio/preview-lanka-2.jpg' | relative_url }}">
+				<img src="{{'pages/portfolio/preview-lanka-3.jpg' | relative_url }}">
+				<img src="{{'pages/portfolio/preview-lanka-4.png' | relative_url }}">
+			</div>
 		</aside>
 	</section>
 
@@ -53,36 +63,37 @@
 	<header><h2>Employment</h2></header>
 
 	<section>
-		<img src="{{ "pages/portfolio/logo-mfg.jpg" | relative_url }}">
+		<img src="{{'pages/portfolio/logo-mfg.jpg' | relative_url }}">
 		<aside>
 			<h3><a href="https://www.madfingergames.com/" target="_blank">MADFINGER Games, a.s</a></h3>
-			<div>Unreal Engine Programmer</div>
+			<div>Unreal Engine Programmer</div>			
+			<div>Apr 2023 - Present</div>			
 			<br>
 			<div>Unannounced tactical hardcore FPS</div>
-			<br>
-			<div>Apr 2023 - Present</div>
 			<br>
 			<div class="skills">Skills: Unreal Engine 5</div>
 		</aside>
 	</section>
 
 	<section>
-		<img src="{{ "pages/portfolio/logo-saab.png" | relative_url }}">
+		<img src="{{'pages/portfolio/logo-saab.png' | relative_url }}">
 		<aside>
 			<h3><a href="https://www.saab.com" target="_blank">Saab</a></h3>
-			<div>Unity Programmer</div>
-			<br>
-			<div><a href="https://www.saab.com/products/ground-combat-indoor-trainer" target="_blank">Ground Combat Indoor Traineer</a></div>
-			<br>
-			<div>Responsible for scenario editor</div>
+			<div>Unity Programmer</div>			
 			<div>Feb 2022 - Nov 2022 - 10 mos</div>
 			<br>
+			<div><a href="https://www.saab.com/products/ground-combat-indoor-trainer" target="_blank">Ground Combat Indoor Traineer</a></div>
+			<div>Responsible for scenario editor</div>
+			<br>
 			<div class="skills">Skills: Unity · ShaderLab · HLSL · WPF · Git · Azure DevOps · C#</div>
+			<div class="previews">
+				<img src="{{'pages/portfolio/preview-gcidt.webp' | relative_url }}">
+			</div>
 		</aside>
 	</section>
 
 	<section>
-		<img src="{{ "pages/portfolio/logo-grip.jpg" | relative_url }}">
+		<img src="{{'pages/portfolio/logo-grip.jpg' | relative_url }}">
 		<aside>
 			<h3><a href="https://www.grip-digital.com/" target="_blank">Grip Digital</a></h3>
 			<div>Unreal Engine Programmer</div>
@@ -105,12 +116,15 @@
 				<div>February 2020 – August 2020<div>
 				<br>
 				<div class="skills">Skills: XBox DevKit · PS4 DevKit · Console Certification Requirements · Build Pipeline · YouTrack · UpSource · TeamCity CI · Plastic SCM · Unreal Engine 4 · Blueprints · C++<div>
+				<div class="previews">
+					<img src="{{'pages/portfolio/preview-visage.jpg' | relative_url }}">
+				</div>
 			</section>
 		</aside>
 	</section>
 
 	<section>
-		<img src="{{ "pages/portfolio/logo-tieto.jpg" | relative_url }}">
+		<img src="{{'pages/portfolio/logo-tieto.jpg' | relative_url }}">
 		<aside>
 			<h3><a href="https://www.tietoevry.com/" target="_blank">Tieto</a></h3>
 			<div>Web Developer</div>
@@ -128,7 +142,7 @@
 	<header><h2>Education<h2></header>
 
 	<section>
-		<img src="{{ "pages/portfolio/logo-vsb.jpg" | relative_url }}">
+		<img src="{{'pages/portfolio/logo-vsb.jpg' | relative_url }}">
 		<aside>
 			<h3><a href="https://www.vsb.cz/" target="_blank">VŠB - Technical University of Ostrava</a></h3>
 			<div>Information technology</div>
@@ -151,7 +165,7 @@
 	</section>
 
 	<section>
-		<img src="{{ "pages/portfolio/logo-spse.png" | relative_url }}">
+		<img src="{{'pages/portfolio/logo-spse.png' | relative_url }}">
 		<aside>
 			<h3><a href="https://spsehavirov.cz/" target="_blank">SPŠE Havířov</a></h3>
 			<div>Secondary School of Electrotechnical Engineering in  Havířov</div>
