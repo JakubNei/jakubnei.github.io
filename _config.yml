@@ -1,2 +1,7 @@
 title: Jakub Nei
-description: Website serving as my portfolio and landing page for Unity Asset Store assets
+username: Jakub Nei
+description: Prague based Game Developer, focusing on Unreal Engine and Unity
+
+include_dir: "."
+plugins:
+  - jekyll-loading-lazy # Adds loading="lazy" to lazily load your images and iframes without the need for JavaScript.
