@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="{{ "/pages/particles-header/particles-header.css?v=" | append: site.github.build_revision | relative_url }}">
 <script src="{{ "/pages/particles-header/particles.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/pages/particles-header/particles-header.js" | prepend: site.baseurl }}"></script>
+<script src="https://kit.fontawesome.com/c98183bd7d.js" crossorigin="anonymous"></script>
 <div id="particles-header">
   <div class="header">
       <h1>
@@ -34,9 +35,7 @@
         <a aria-label="My Medium" target="_blank" href="https://{{ site.medium_url }}"><i class="icon fa fa-medium" aria-hidden="true"></i></a>
         {% endif %}
       </div>
-      <div class="header-links">
-        <!-- <a class="link" href="#about" data-scroll>About Me</a> -->
-      </div>
   </div>
-  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+  <a class="down" href="#down" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
+<span id="down" style="display: inline-block; height: 0px; color: transparent;">_</span>

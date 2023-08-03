@@ -1,10 +1,13 @@
 ---
 ---
 
+// Header is taken from https://github.com/murraco/jekyll-theme-minimal-resume/
+
 #particles-header {
 
   $main: #1a222c;
-  $sec: #4B5664;
+  //$sec: #4B5664;
+  $sec: #999;
   $purple: #54516A;
   $cut: 768px;
 
@@ -69,15 +72,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
     a {
-      // no borders
       outline: 0 !important;
       border: none !important;
       outline-style: none !important;
       -moz-outline-style: none !important;
-
       padding: none;
       margin: none;
     }
@@ -89,16 +89,12 @@
       font-size: 20px;
       padding: 10px;
       margin: 5px;
-      border-radius: 50%;
-      border: 2px solid #FFF;
-      transition: all .5s;
-      &:hover {
-        color: $main;
-        background: #FFF;
-      }
-      &:active {
-        color: $main;
-        background: #FFF;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      //transition: all .5s;
+      &:hover, &:active {
+        //border-color: #FFF;
+        text-shadow: 0px 0px 9px white;
       }
       @media only screen and (min-width:$cut) {
         width: 30px;
@@ -138,11 +134,9 @@
         fill: #fff;
         -webkit-animation: pulse 1.3s infinite;
         animation: pulse 1.3s infinite;
-        &:hover {
-          color: $sec;
-        }
-        &:active {
-          color: $sec;
+        &:hover, &:active {
+          //color: $sec;
+          text-shadow: 0px 0px 9px white;
         }
     }
   }

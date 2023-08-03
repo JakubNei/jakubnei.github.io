@@ -10,6 +10,8 @@
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+    <script src="{{ "/assets/js/sweet-scroll.min.js" | relative_url }}"></script>
+
   </head>
   <body>
     {% include_relative pages/particles-header/particles-header.html %}
@@ -17,7 +19,11 @@
     <section id="main-content">
       {{ content }}
     </section>
-
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const sweetScroll = new SweetScroll({ /* some options */ });
+      });
+    </script>
     </div>
   </body>
 </html>
