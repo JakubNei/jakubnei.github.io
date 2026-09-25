@@ -6,6 +6,11 @@
 <siv id="portfolio">
 
 <section>
+	<header><h2>About</h2></header>
+	<div>Long-term game development and computer graphics enthusiast. I love creating complex beautiful simulations as well as user/game designer friendly systems. Programming and games are my safe space that I love to return to.</div>
+</section>
+
+<section>
 	<header><h2>Personal Projects</h2></header>
 
 	<section>
@@ -30,7 +35,68 @@
 
 
 <section>
-	<header><h2>Game Jams</h2></header>
+	<header>
+		<h2>Game Jams</h2>
+		<div style="margin-top: 10px">I attend various game jams where I can fully utilize my whole creative skillset. My role is usually lead or senior programmer and producer. I also use my experience creating, rigging, and skinning models, creating textures, and designing levels.</div>
+	</header>
+
+	<section>
+		<img src="{{'pages/portfolio/logo-unity.png' | relative_url }}">
+		<aside>
+			<h3>Matfyz Game Jam – Spring 2026 - <a href="https://ondrisu.itch.io/corporate-abortion">Corporate Abortion</a></h3>
+			<div>Apr 24-26 2026</div>
+			<br>
+			<div>One woman. One building. Two heartbeats. One choice. Programming.</div>
+			<br>
+			<div class="skills">Skills: Unity · C#</div>
+			<br>
+			<div>Build: <a href="https://ondrisu.itch.io/corporate-abortion">itch.io</a></div>
+		</aside>
+	</section>
+
+	<section>
+		<aside>
+			<h3>GDS Prague Game Jam 2025 - <a href="https://jakubnei.itch.io/baldie-favors-the-fortune">Baldie Favors the Fortune</a></h3>
+			<div>Nov 28-30 2025</div>
+			<div>Theme: Fortune favors the bold</div>
+			<br>
+			<div>Fast arena shooter where hair never stops growing. Stay perfectly bald, fight the shampoo bots, and escape.</div>
+			<br>
+			<div class="skills">Skills: Unreal Engine</div>
+			<br>
+			<div>Build: <a href="https://jakubnei.itch.io/baldie-favors-the-fortune">itch.io</a></div>
+		</aside>
+	</section>
+
+	<section>
+		<img src="{{'pages/portfolio/logo-unity.png' | relative_url }}">
+		<aside>
+			<h3>Spring FlyingJam @ Matfyz 2025 - <a href="https://jakubnei.itch.io/merchanthero">MerchantHero</a></h3>
+			<div>Mar 28-30 2025</div>
+			<div>Theme: From Hero to Zero</div>
+			<br>
+			<div>Deliver as much as you can to the city. Drag the cart, keep thieves off the cargo, and load what falls back on.</div>
+			<br>
+			<div class="skills">Skills: Unity · C#</div>
+			<br>
+			<div>Build: <a href="https://jakubnei.itch.io/merchanthero">itch.io</a></div>
+		</aside>
+	</section>
+
+	<section>
+		<img src="{{'pages/portfolio/logo-globalgamejam.png' | relative_url }}">
+		<aside>
+			<h3>Global Game Jam 2025 - <a href="https://globalgamejam.org/games/2025/bubble-cards-1">Bubbles of Aether</a></h3>
+			<div>Jan 24-26 2025</div>
+			<div>Theme: Bubble</div>
+			<br>
+			<div>You are a blood cell protecting oxygen bubbles from monsters on the way from the heart to other organs.</div>
+			<br>
+			<div class="skills">Skills: Unity</div>
+			<br>
+			<div>Build: <a href="https://globalgamejam.org/games/2025/bubble-cards-1">Global Game Jam</a></div>
+		</aside>
+	</section>
 
 	<section>
 		<img src="{{'pages/portfolio/logo-globalgamejam.png' | relative_url }}">
@@ -84,12 +150,25 @@
 		<img src="{{'pages/portfolio/logo-mfg.jpg' | relative_url }}">
 		<aside>
 			<h3><a href="https://www.madfingergames.com/" target="_blank">MADFINGER Games, a.s</a></h3>
-			<div>Unreal Engine Programmer</div>			
-			<div>Apr 2023 - Present</div>			
+			<div>Senior Gameplay Programmer</div>
+			<div>Apr 2023 - May 2026 - 3 yrs 2 mos</div>
 			<br>
 			<div><a href="https://store.steampowered.com/app/2479810/Gray_Zone_Warfare/" target="_blank">Gray Zone Warfare</a></div>
 			<br>
-			<div>Level instances world building, automated performance tests, exploration system (exploring LZs & named areas), player progression (rank & xp), part of quest system, quest interactions, options, keybinding, matchmaking load test, server node load test, quests automated test, DLSS & FSR integration, part of dragging, small gameplay tasks</div>
+			<div>I implemented:</div>
+			<div>· Research, then migration of an unmaintained buggy world-building plugin into native level instances</div>
+			<div>· Automated performance tests</div>
+			<div>· System to explore, unlock, and save landing zones and named spherical areas</div>
+			<div>· System to gain XP and player rank</div>
+			<div>· Part of the quest system, mainly interaction with world locations and objects</div>
+			<div>· The options and settings system: research, implementation, and maintenance</div>
+			<div>· Automatic initial graphics settings from a GPU and CPU benchmark, plus resolution, based on several months of QA feedback</div>
+			<div>· Complex advanced keybinding system</div>
+			<div>· Regular updates and maintenance of the DLSS, FSR, and XeSS plugins</div>
+			<div>· Matchmaking load test: thousands of client-to-server connections in one lightweight Linux process, to stress matchmaking and the autoscaler</div>
+			<div>· PlayerBots: hundreds of lightweight Linux clients to stress one server instance</div>
+			<div>· Automated quest tests</div>
+			<div>· Backtrace.io crash reports, Grafana server logs, and analytics, joined together to fix bugs and research tasks</div>
 			<br>
 			<div class="skills">Skills: Unreal Engine 5 · C++ · Blueprints · Perforce · UGS · Multiplayer · TeamCity CI · Rider · Jira</div>
 			<br>
@@ -103,11 +182,18 @@
 		<img src="{{'pages/portfolio/logo-saab.png' | relative_url }}">
 		<aside>
 			<h3><a href="https://www.saab.com" target="_blank">Saab</a></h3>
-			<div>Unity Programmer</div>			
+			<div>Senior Unity Programmer</div>
 			<div>Feb 2022 - Nov 2022 - 10 mos</div>
 			<br>
-			<div><a href="https://www.saab.com/products/ground-combat-indoor-trainer" target="_blank">Ground Combat Indoor Traineer</a></div>
-			<div>Responsible for scenario editor</div>
+			<div><a href="https://www.saab.com/products/ground-combat-indoor-trainer" target="_blank">Ground Combat Indoor Trainer</a></div>
+			<br>
+			<div>I implemented:</div>
+			<div>· Runtime reflection-based inspector of GameObject components and properties, for debugging while the simulation is running</div>
+			<div>· Thermal view, connecting models, textures, assets, and post process across the systems</div>
+			<div>· Maintenance of the mission editor</div>
+			<div>· New assets</div>
+			<div>· Adaptive vehicle audio</div>
+			<div>· GPU-instanced pointers to vehicles for the NLAW scope view</div>
 			<br>
 			<div class="skills">Skills: Unity · ShaderLab · HLSL · WPF · Git · Azure DevOps · C#</div>
 			<br>
@@ -121,26 +207,30 @@
 		<img src="{{'pages/portfolio/logo-grip.jpg' | relative_url }}">
 		<aside>
 			<h3><a href="https://www.grip-digital.com/" target="_blank">Grip Digital</a></h3>
-			<div>Unreal Engine Programmer</div>
-			<div>April 2018 – December 2021 - 3 yr 9 mos</div>
+			<div>Gameplay Programmer</div>
+			<div>Apr 2018 – Dec 2021 - 3 yrs 9 mos</div>
 			<section>
-				<div>Unannounced creative sandbox multiplayer lego like game<div><!-- https://cc.cz/cesti-vyvojari-odhalili-svuj-podil-na-marvelovce-na-hre-marvels-midnight-suns-delal-i-prazsky-grip/ -->
+				<div>Unannounced creative sandbox multiplayer LEGO-like game</div>
 				<br>
-				<div>April 2018 – January 2020<div></div>
-				<div>Responsible for ingame building systems and tools, save load system, save format, save format and migration<div>				
+				<div>Apr 2018 – Jan 2020</div>
+				<div>· Owned the in-game building systems and tools, about 50% of the gameplay</div>
+				<div>· Owned the save/load system, save format, and migration</div>
+				<div>· Owned 80% of the codebase at the beginning of the project, 30% at the end</div>
 				<br>
-				<div>September 2020 – December 2021<div>
-				<div>Responsible for networking of ingame building systems and tools<div>
+				<div>Sep 2020 – Dec 2021</div>
+				<div>· Networking and replication of the in-game building systems and tools</div>
 				<br>
-				<div class="skills">Skills: Unreal Engine 4  ·  Multiplayer · Profiling · Optimizations · Build Pipeline · YouTrack · UpSource · TeamCity CI · Plastic SCM · Unreal Engine 4 · Blueprints · C++ · Technical Art<div>
+				<div class="skills">Skills: Unreal Engine 4 · Multiplayer · Profiling · Optimizations · Build Pipeline · YouTrack · UpSource · TeamCity CI · Plastic SCM · Blueprints · C++ · Technical Art</div>
 			</section>
 			<section>
 				<div><a href="https://store.steampowered.com/app/594330/Visage/" target="_blank">Visage</a></div>
 				<br>
-				<div>February 2020 – August 2020<div>
-				<div>Responsible for XBox port<div>
+				<div>Feb 2020 – Aug 2020</div>
+				<div>· Responsible for the Xbox port</div>
+				<div>· Performance optimizations</div>
+				<div>· Bugfixes that made it upstream into the PC update</div>
 				<br>
-				<div class="skills">Skills: Unreal Engine 4  · XBox DevKit · PS4 DevKit · Console Certification Requirements · Profiling · Optimizations · Build Pipeline · YouTrack · UpSource · TeamCity CI · Plastic SCM · Unreal Engine 4 · Blueprints · C++<div>
+				<div class="skills">Skills: Unreal Engine 4 · Xbox DevKit · PS4 DevKit · Console Certification Requirements · Profiling · Optimizations · Build Pipeline · YouTrack · UpSource · TeamCity CI · Plastic SCM · Blueprints · C++</div>
 				<br>
 				<div class="previews">
 					<img src="{{'pages/portfolio/preview-visage.jpg' | relative_url }}">
@@ -156,7 +246,7 @@
 			<div>Web Developer</div>
 			<div>May 2016 - Mar 2018 - 1 yr 11 mos</div>
 			<br>
-			<div>Front and back end for website for end customers of energy distribution companies in Nordic countries.</div>
+			<div>Front-end and back-end development for a website serving customers of energy distribution companies in the Nordic countries.</div>
 			<br>
 			<div class="skills">Skills: ASP.NET · ASP.NET MVC · Entity Framework · AngularJS · C# · .NET · MySQL · Oracle Database</div>
 		</aside>
