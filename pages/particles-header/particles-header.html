@@ -20,7 +20,9 @@
         {% if site.github_username %}
         <a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a>
         {% endif %}
-        <a href="https://jakubnei.itch.io/">jakubnei.itch.io</a>
+        {% if site.itch_username %}
+        <a href="https://{{ site.itch_username }}.itch.io/">{{ site.itch_username }}.itch.io</a>
+        {% endif %}
       </p>
       <div class="header-icons">
         {% if site.email %}
@@ -41,7 +43,9 @@
         {% if site.github_username %}
         <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
         {% endif %}
-        <a aria-label="My itch.io" target="_blank" href="https://jakubnei.itch.io/"><i class="icon fa-brands fa-itch-io" aria-hidden="true"></i></a>
+        {% if site.itch_username %}
+        <a aria-label="My itch.io" target="_blank" href="https://{{ site.itch_username }}.itch.io/"><i class="icon fa-brands fa-itch-io" aria-hidden="true"></i></a>
+        {% endif %}
         {% if site.medium_username %}
         <a aria-label="My Medium" target="_blank" href="https://medium.com/{{ site.medium_username }}"><i class="icon fa fa-medium" aria-hidden="true"></i></a>
         {% elsif site.medium_url %}
