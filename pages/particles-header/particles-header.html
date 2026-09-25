@@ -8,7 +8,20 @@
       <h1>
         <span class="site-title">{{ site.username }}</span>
         <span class="site-description">{{ site.description-line-1 }}</span>
+        <span class="site-description-2">{{ site.description-line-2 }}</span>
       </h1>
+      <p class="print-contact">
+        {% if site.email %}
+        <a href="mailto:{{ site.email }}">Email</a>
+        {% endif %}
+        {% if site.linkedin_username %}
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">https://linkedin.com/in/{{ site.linkedin_username }}/</a>
+        {% endif %}
+        {% if site.github_username %}
+        <a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a>
+        {% endif %}
+        <a href="https://jakubnei.itch.io/">jakubnei.itch.io</a>
+      </p>
       <div class="header-icons">
         {% if site.email %}
         <a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i></a>

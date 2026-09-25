@@ -185,3 +185,13 @@
     }
   }
 }
+
+@media print
+{
+  #main-content
+  {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}

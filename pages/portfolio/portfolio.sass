@@ -71,12 +71,152 @@
 
 			&:not(:last-child)
 				margin-bottom: 20px
-				
-
-
 
 		&:not(:last-child)
 			margin-bottom: 20px
+
+	ul.points
+		list-style: none
+		margin: 0
+		padding: 0
+		li::before
+			content: "· "
+
+	@media print
+		color: #191919
+		font-size: 10.5pt
+		line-height: 1.35
+
+		a
+			color: #0a66c2
+			text-decoration: none
+			text-shadow: none
+
+		> section
+			border: none
+			background: none
+			padding: 0
+			margin: 0 0 8px
+			border-radius: 0
+			break-inside: auto
+			page-break-inside: auto
+
+			> header
+				margin: 0
+				break-after: avoid
+				page-break-after: avoid
+				h2
+					margin: 13px 0 2px
+					font-size: 10pt
+					font-weight: 700
+					letter-spacing: 0.06em
+					text-transform: uppercase
+					color: #666666
+					line-height: 1.2
+
+			> section
+				display: block
+				border: none
+				border-radius: 0
+				padding: 8px 0 2px
+				margin: 0
+				break-inside: avoid
+				page-break-inside: avoid
+
+				> img
+					display: none
+
+				> aside
+					display: grid
+					grid-template-columns: minmax(0, 1fr) auto
+					column-gap: 18px
+					align-items: baseline
+					width: 100%
+
+					> h3
+						grid-column: 1
+						grid-row: 1
+						margin: 0
+						font-size: 12pt
+						font-weight: 700
+						color: #191919
+						line-height: 1.25
+
+					> h4
+						grid-column: 1
+						grid-row: 2
+						margin: 0
+						font-size: 11pt
+						font-weight: 600
+						line-height: 1.25
+						a
+							color: #0a66c2
+							font-weight: 600
+
+					> .when
+						grid-column: 2
+						grid-row: 1
+						margin: 0
+						font-size: 10.5pt
+						color: #191919
+						white-space: nowrap
+						text-align: right
+
+					> :not(h3):not(h4):not(.when)
+						grid-column: 1 / -1
+
+					br
+						display: none
+
+					> section
+						border: none
+						margin: 4px 0 0
+						padding: 0
+						display: grid
+						grid-template-columns: minmax(0, 1fr) auto
+						column-gap: 18px
+						align-items: baseline
+
+						> .when
+							grid-column: 2
+							grid-row: 1
+							margin: 0
+							white-space: nowrap
+							text-align: right
+
+						> :not(.when)
+							grid-column: 1
+
+						> :not(.when):not(:first-child)
+							grid-column: 1 / -1
+
+						> div:first-child
+							font-weight: 700
+							color: #191919
+
+					.skills
+						margin-top: 3px
+						color: #333333
+
+					.previews
+						display: none
+
+				&.job > aside
+					> h3
+						grid-column: 1 / -1
+					> .when
+						grid-row: 2
+
+		ul.points
+			list-style: disc
+			margin: 2px 0 3px
+			padding: 0 0 0 1.15em
+			li
+				margin: 0
+				padding: 0
+				line-height: 1.35
+				&::before
+					content: none
 				
 			
 		
