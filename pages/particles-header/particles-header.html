@@ -14,6 +14,15 @@
         {% if site.email %}
         <a href="mailto:{{ site.email }}">Email</a>
         {% endif %}
+        {% if site.twitter_username %}
+        <a href="https://twitter.com/{{ site.twitter_username }}">twitter.com/{{ site.twitter_username }}</a>
+        {% endif %}
+        {% if site.instagram_username %}
+        <a href="https://www.instagram.com/{{ site.instagram_username }}">instagram.com/{{ site.instagram_username }}</a>
+        {% endif %}
+        {% if site.facebook_username %}
+        <a href="https://www.facebook.com/{{ site.facebook_username }}">facebook.com/{{ site.facebook_username }}</a>
+        {% endif %}
         {% if site.linkedin_username %}
         <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">https://linkedin.com/in/{{ site.linkedin_username }}/</a>
         {% endif %}
@@ -22,6 +31,11 @@
         {% endif %}
         {% if site.itch_username %}
         <a href="https://{{ site.itch_username }}.itch.io/">{{ site.itch_username }}.itch.io</a>
+        {% endif %}
+        {% if site.medium_username %}
+        <a href="https://medium.com/{{ site.medium_username }}">medium.com/{{ site.medium_username }}</a>
+        {% elsif site.medium_url %}
+        <a href="https://{{ site.medium_url }}">{{ site.medium_url }}</a>
         {% endif %}
       </p>
       <div class="header-icons">
