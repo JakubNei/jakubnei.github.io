@@ -3,7 +3,7 @@
 
 <link rel="stylesheet" href="{{'/pages/portfolio/portfolio.css?v=" | append: site.github.build_revisio' | relative_url }}">
 
-<siv id="portfolio">
+<div id="portfolio">
 
 <section>
 	<header><h2>Employment</h2></header>
@@ -12,29 +12,32 @@
 		<img src="{{'pages/portfolio/logo-mfg.jpg' | relative_url }}">
 		<aside>
 			<h3 class="role">Senior Gameplay Programmer</h3>
-			<h4 class="company"><a href="https://www.madfingergames.com/" target="_blank">MADFINGER Games, a.s</a></h4>
-			<div class="when">Apr 2023 - May 2026 - 3 yrs 2 mos</div>
+			<h4 class="company"><a href="https://www.madfingergames.com/" target="_blank">MADFINGER Games, a.s.</a></h4>
+			<div class="when">Apr 2023 - May 2026 · 3 years 2 months</div>
 			<div class="location">Brno, South Moravia, Czechia</div>
 			<br>
 			<div><a href="https://store.steampowered.com/app/2479810/Gray_Zone_Warfare/" target="_blank">Gray Zone Warfare</a></div>
 			<br>
 			<div>I implemented:</div>
 			<ul class="points">
-				<li>Research, then migration of unmaintained buggy world-building plugin into native level instances</li>
+				<li>Research, then migration of an unmaintained, buggy world-building plugin into native level instances</li>
 				<li>Automated performance tests</li>
 				<li>System to explore, unlock, and save landing zones and named spherical areas</li>
-				<li>System to gain XPs and player rank</li>
-				<li>Part of quest system, mainly interaction with world locations and objects</li>
+				<li>System to gain XP and player rank</li>
+				<li>Part of the quest system, mainly interaction with world locations and objects</li>
 				<li>Entire options and settings system: research, implementation, and maintenance</li>
 				<li>Automatic initial graphics settings from a GPU and CPU benchmark, plus resolution, based on several months of QA feedback</li>
 				<li>Complex advanced keybinding system</li>
 				<li>Regular updates and maintenance of the DLSS, FSR, and XeSS plugins</li>
-				<li>Matchmaking loadtest: maintaining thousands of client to game server connections in one lightweight Linux client instance to stress test matchmaking backend and game server autoscaler</li>
-				<li>PlayerBots: hundreds of lightweight Linux clients to stress test one server instance/node</li>
-				<li>Quests automated test</li>
+				<li>Matchmaking load test: maintaining thousands of client-to-game-server connections in one lightweight Linux client instance to stress-test the matchmaking backend and game-server autoscaler</li>
+				<li>PlayerBots: hundreds of lightweight Linux clients to stress-test one game-server instance/node</li>
+				<li>Automated quests test</li>
 				<li>Performance profiling and optimizations</li>
+			</ul>
+			<br>
+			<ul class="points">
 				<li>Used Backtrace.io (crash reporting), Grafana (server log aggregation), and analytics together to gather various information in order to fix bugs and research tasks</li>
-				<li>At critical moments during Gray Zone Warfare beta release, connected customer support and programmers with most pressing issues</li>
+				<li>At critical moments during the Gray Zone Warfare pre-alpha release, connected customer support and programmers with the most pressing issues</li>
 			</ul>
 			<br>
 			<div class="skills">Skills: Unreal Engine 5 · C++ · Blueprints · Perforce · UGS · Multiplayer · TeamCity CI · Rider · Jira</div>
@@ -50,19 +53,19 @@
 		<aside>
 			<h3 class="role">Senior Unity Programmer</h3>
 			<h4 class="company"><a href="https://www.saab.com" target="_blank">Saab</a></h4>
-			<div class="when">Feb 2022 - Nov 2022 - 10 mos</div>
+			<div class="when">Feb 2022 - Nov 2022 · 10 months</div>
 			<div class="location">Slavkov u Brna, South Moravia, Czechia</div>
 			<br>
 			<div><a href="https://www.saab.com/products/ground-combat-indoor-trainer" target="_blank">Ground Combat Indoor Trainer</a></div>
 			<br>
 			<div>I implemented:</div>
 			<ul class="points">
-				<li>Runtime reflection-based inspector of GameObjects components and properties</li>
-				<li>Thermal view finish, connected all the individual parts (models, textures, assets, post post process, etc) across all systems</li>
-				<li>Maintenance of mission editor</li>
+				<li>Runtime reflection-based inspector of GameObject components and properties</li>
+				<li>Finished the thermal view by connecting all the individual parts (models, textures, assets, post-processing, etc.)</li>
+				<li>Maintenance of the mission editor</li>
 				<li>Adding new assets</li>
-				<li>Vehicles adaptive audio</li>
-				<li>GPU instanced rendering pointers to vehicles for NLAW scope view</li>
+				<li>Adaptive audio for vehicles</li>
+				<li>GPU-instanced rendering of pointers to vehicles for the NLAW scope view</li>
 			</ul>
 			<br>
 			<div class="skills">Skills: Unity · ShaderLab · HLSL · WPF · Git · Azure DevOps · C#</div>
@@ -77,17 +80,17 @@
 		<img src="{{'pages/portfolio/logo-grip.jpg' | relative_url }}">
 		<aside>
 			<h3 class="role">Gameplay Programmer</h3>
-			<h4 class="company"><a href="https://www.grip-digital.com/" target="_blank">Grip Digital</a></h4>
-			<div class="when">Apr 2018 - Dec 2021 · 3 yrs 9 mos</div>
-			<div class="location">Prague, Czechia · On-site</div>
+			<h4 class="company"><a href="https://www.grip-digital.com/" target="_blank">GRIP Studios</a></h4>
+			<div class="when">Apr 2018 - Dec 2021 · 3 years 9 months</div>
+			<div class="location">Prague, Czechia</div>
 			<section>
-				<div>Unannounced creative sandbox multiplayer LEGO-like game, "Minecraft without blocks", project closed</div>
+				<div>An unannounced creative sandbox multiplayer LEGO-like game (Minecraft without blocks). The project was closed.</div>
 				<br>
 				<div class="when">April 2018 – January 2020</div>
 				<ul class="points">
-					<li>Owned the in-game building systems and tools which is like 50% of the gameplay</li>
-					<li>Owned the save/load system, save format and migration</li>
-					<li>Owned 80% of the codebase at the beggining of the project, 30% at the end.</li>
+					<li>Owned the in-game building systems and tools, which accounted for about 50% of the gameplay</li>
+					<li>Owned the save/load system, save format, and migration</li>
+					<li>Owned 80% of the codebase at the beginning of the project, and 30% at the end</li>
 					<li>Performance profiling and optimizations</li>
 				</ul>
 				<br>
@@ -101,11 +104,11 @@
 			<section>
 				<div><a href="https://store.steampowered.com/app/594330/Visage/" target="_blank">Visage</a></div>
 				<br>
-				<div class="when">Feb 2020 – Aug 2020</div>
+				<div class="when">February 2020 – August 2020</div>
 				<ul class="points">
-					<li>Responsible for the Xbox port</li>
+					<li>Responsible for Xbox port</li>
 					<li>Performance profiling and optimizations</li>
-					<li>Bugfixes that made it upstream into the PC update</li>
+					<li>Bug fixes that made it upstream into the PC update</li>
 				</ul>
 				<br>
 				<div class="skills">Skills: Unreal Engine 4 · Xbox DevKit · PS4 DevKit · Console Certification Requirements · Profiling · Optimizations · Build Pipeline · YouTrack · UpSource · TeamCity CI · Plastic SCM · Blueprints · C++</div>
@@ -122,7 +125,7 @@
 		<aside>
 			<h3 class="role">Web Developer</h3>
 			<h4 class="company"><a href="https://www.tietoevry.com/" target="_blank">Tieto</a></h4>
-			<div class="when">May 2016 - Mar 2018 - 1 yr 11 mos</div>
+			<div class="when">May 2016 - Mar 2018 · 1 year 11 months</div>
 			<div class="location">Ostrava, Moravia-Silesia, Czechia</div>
 			<br>
 			<div>Front-end and back-end development for a website serving customers of energy distribution companies in the Nordic countries.</div>
@@ -136,6 +139,7 @@
 <section>
 	<header>
 		<h2>Personal Projects</h2>
+		<div>In my free time, I have created various C# and Unity3D projects and experiments:</div>
 	</header>
 
 	<section>
@@ -162,6 +166,7 @@
 <section>
 	<header>
 		<h2>Game Jams</h2>
+		<div>I attend various gammejams where I can fully utilize all of my creative skillset. My role is usually lead/senior programmer and producer, I also leverage my experience in creating/rigging/skinning models, creating textures and designing/creating levels.</div>
 	</header>
 
 	<section>
@@ -260,20 +265,70 @@
 </section>
 
 
+
+<section>
+	<header><h2>Scripting/Moding Games</h2></header>
+
+	<section>
+		<aside>
+			<h3>VRChat</h3>
+			<ul class="points">
+				<li>Unity3D shader and content creator for VRChat - <a href="https://github.com/netri/Neitri-Unity-Shaders" target="_blank">https://github.com/netri/Neitri-Unity-Shaders</a></li>
+				<li>Created part of Blender plugin to help simplify models for VRChat from other sources</li>
+			</ul>
+			<br>
+			<div class="skills">Skills: ShaderLab, Blender, Photoshop, Geometry Shader, Tessellation Shader, Modeling, Rigging, Skining, Texturing, Level Design</div>
+		</aside>
+	</section>
+
+	<section>
+		<aside>
+			<h3>Arma 2/3</h3>
+			<ul class="points">
+				<li>Arma server admin for <a href="https://taw.net/" target="_blank">https://taw.net/</a></li>
+				<li>Created and maintained useful scripts for Arma 3 community:
+					<ul>
+						<li>Loadout save/load - <a href="https://forums.bohemia.net/forums/topic/139848-getset-loadout-saves-and-loads-pretty-much-everything/?page=1" target="_blank">https://forums.bohemia.net/forums/topic/139848-getset-loadout-saves-and-loads-pretty-much-everything/?page=1</a></li>
+						<li>Player map markers - <a href="https://forums.bohemia.net/forums/topic/147033-dynamic-player-markers/?page=1" target="_blank">https://forums.bohemia.net/forums/topic/147033-dynamic-player-markers/?page=1</a></li>
+					</ul>
+				</li>
+				<li>Investigated and fixed bugs in Arma 3 Task Force Arrowhead Radio addon - <a href="https://github.com/michail-nikolaev/task-force-arma-3-radio/commits?author=aeroson" target="_blank">https://github.com/michail-nikolaev/task-force-arma-3-radio/commits?author=aeroson</a></li>
+			</ul>
+			<br>
+			<div class="skills">Skills: C++, SQF, Server Administration</div>
+		</aside>
+	</section>
+
+	<section>
+		<aside>
+			<h3>Second Life</h3>
+			<ul class="points">
+				<li>Learned ingame scripting, made money for my first PC as scripter for hire</li>
+				<li>Learned basics of texturing, modeling, skinning, rigging</li>
+			</ul>
+			<br>
+			<div class="skills">Skills: Scripting, Modeling, Texturing</div>
+		</aside>
+	</section>
+</section>
+
+
 <section>
 	<header><h2>Education<h2></header>
 
 	<section>
 		<img src="{{'pages/portfolio/logo-vsb.jpg' | relative_url }}">
 		<aside>
-			<h3 class="company"><a href="https://www.vsb.cz/" target="_blank">VŠB - Technical University of Ostrava</a></h3>
-			<div class="role">Computer Science and Technology, Computer Graphics and Image</div>
+			<h3 class="company"><a href="https://www.vsb.cz/" target="_blank">Vysoká škola báňská - Technická univerzita Ostrava</a></h3>
+			<div class="role">Inženýr (Ing.), Computer Graphics</div>
 			<section>
-				<div class="role">Masters's degree, Computer Science and Technology, Computer Graphics and Image</div>
+				<div class="role">Inženýr (Ing.), Computer Graphics</div>
 				<br>
 				<div class="when">2014 - 2017</div>
-				<div>Diploma thesis: <a href="https://github.com/aeroson/procedural-planets-generator" target="_blank">Procedural Planets Generation</a>, <a href="https://github.com/aeroson/UnityProceduralPlanets" target="_blank">Improved version ported to Unity</a></div>
-				<div class="skills">Skills: C# · Compute Shader · Floating Origin · Deferred Shading · Software Z Buffer</div>
+				<div>Diploma thesis: Procedural Planets Generation</div>
+				<div>Release and source code: <a href="https://github.com/aeroson/procedural-planets-generator" target="_blank">https://github.com/aeroson/procedural-planets-generator</a></div>
+				<div>Improved version ported to Unity <a href="https://github.com/aeroson/UnityProceduralPlanets" target="_blank">https://github.com/aeroson/UnityProceduralPlanets</a></div>
+				<div class="skills">(C#, Compute Shader, Floating Origin, Deferred Shading, Software Z Buffer)</div>
 				<br>
 				<div class="previews">
 					<a href="https://raw.githubusercontent.com/JakubNei/UnityProceduralPlanets/535e47698cbafcafe4e36d014fc163577a56d932/readme_images/1.png" target="_blank"><img src="https://raw.githubusercontent.com/JakubNei/UnityProceduralPlanets/535e47698cbafcafe4e36d014fc163577a56d932/readme_images/1.png"></a>
@@ -284,11 +339,11 @@
 				</div>
 			</section>
 			<section>
-				<div class="role">Bachelor's degree, Computer Science and Technology</div>
+				<div class="role">Bachelor's degree, Information technology</div>
 				<br>
 				<div class="when">2011 - 2014</div>
-				<div>Bechelor thesis: Infinite Procedural Terrain Generation<div>
-				<div class="skills">Skills: C++ · OpenGL · GLSL · Forward Rendering · View Frustum Culling · Instanced Rendering · Tessellation<div>
+				<div>Bechelor's thesis topic: Infinite Procedural Terrain Generation</div>
+				<div class="skills">(C++, OpenGL, GLSL, Forward Rendering, View Frustum Culling, Instanced Rendering, Tessellation)</div>
 				<br>
 				<div class="previews">
 					<img src="{{'pages/portfolio/preview-bechelor-procedural-terrain.jpg' | relative_url }}">
